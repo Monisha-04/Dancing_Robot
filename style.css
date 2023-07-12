@@ -1,0 +1,261 @@
+body{
+    background: black;
+
+}
+h1{
+    color: chartreuse;
+    text-align: center;
+}
+.container{
+    height:500px;
+    width: 1000px;
+    border : 4px solid gold;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+.face{
+    height: 125px;
+    width: 150px;
+    background: chartreuse;
+    margin-top: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-top-left-radius:50% ;
+    border-top-right-radius:50% ;
+    transition: width 1s ease;
+}
+.container:hover .face{
+       animation: face 1s infinite;
+}
+@keyframes face{
+    0%{
+       transform: translateX(30px);
+    }
+    25%{
+    transform: translateX(-30px);
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    75%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+.eyes{
+    display:flex;
+    width: 150px;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.leye{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.container:hover .leye{
+    animation: leye 1s infinite;
+}
+@keyframes leye{
+    0%{
+       height: 0px;
+
+     }
+ 25%{
+     height: 30px;
+ }
+     50%{
+        height: 0px;
+     }
+     75%{
+       background-color: red;
+     }
+     100%{
+        background-color: yellow;
+     }
+ }
+.reye{
+    height: 30px;
+    width: 30px;
+    background-color:black;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.container:hover .reye{
+    animation: reye 1s infinite;
+}
+@keyframes reye{
+    0%{
+       height: 0px;
+
+     }
+ 25%{
+     height: 30px;
+ }
+     50%{
+        height: 0px;
+     }
+     75%{
+       background-color: white;
+     }
+     100%{
+        background-color: red;
+     }
+ }
+
+.body{
+    display: flex;
+    width: 250px;
+    justify-content:space-evenly ;
+    margin: auto;
+}
+.leftarm{
+    height: 85px;
+    width: 23px;
+    background-color:chartreuse;
+    border-radius: 30%;
+    margin-top: 25px;
+}
+.container:hover .leftarm{
+    animation: leftarm 2s infinite;
+}
+@keyframes leftarm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+     }
+     25%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+     }
+     50%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+     } 
+     75%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+     }
+     100%{
+        transform: rotate(0deg);
+        transform-origin: top center; 
+     }
+ }
+.rightarm{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 30%;
+    margin-top: 25px;
+}
+.container:hover .rightarm{
+    animation: rightarm 2s infinite;
+}
+@keyframes rightarm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+     }
+     25%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+     }
+     50%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+     } 
+     75%{
+        transform: rotate(360deg);
+        transform-origin: top center;
+     }
+     100%{
+        transform: rotate(0deg);
+        transform-origin: top center; 
+     }
+ }
+.center{
+    height: 125px;
+    width: 150px ;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: chartreuse;
+    /* border-bottom-left-radius: ; */
+    margin-top: 15px;
+}
+.container:hover .center{
+    animation: center 0.1s infinite;
+    border-radius: 55%;
+}
+@keyframes center{
+    from{
+transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.legs{
+    display: flex;
+    width: 150px;
+    justify-content:space-evenly ;
+    margin: auto;
+}
+.lleg{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 30%;
+    margin-top: 15px;
+}
+.container:hover .lleg{
+    animation: lleg 1s infinite;
+}
+@keyframes lleg{
+ 0%{
+    transform: translateY(30px);
+ }
+ 25%{
+ transform: translateY(-30px);
+ }
+ 50%{
+     transform: translateY(30px);
+ }
+ 75%{
+     transform: translateY(-30px);
+ }
+ 100%{
+     transform: translateY(30px);
+ }
+}
+.rleg{
+    height: 85px;
+    width: 23px;
+    background-color: chartreuse;
+    border-radius: 30%;
+    margin-top: 15px; 
+}
+.container:hover .rleg{
+    animation: rleg 1s infinite;
+}
+@keyframes rleg{
+ 0%{
+    transform: translateX(30px);
+ }
+ 25%{
+ transform: translateX(-30px);
+ }
+ 50%{
+     transform: translateX(30px);
+ }
+ 75%{
+     transform: translateX(-30px);
+ }
+ 100%{
+     transform: translateX(30px);
+ }
+}
